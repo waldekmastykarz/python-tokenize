@@ -22,6 +22,8 @@ Select the model to use for tokenization in the Jupyter notebook. You can choose
 
 ```python
 text = 'Your text here'
+num_tokens = tokenizer_fn(text)
+print(f'Number of tokens in text: {num_tokens}')
 ```
 
 ### Calculate tokens in a file
@@ -43,7 +45,7 @@ print(f'{file_path}: {num_tokens}')
 
 ```python
 folder_path = 'path/to/your/folder'
-file_fiter = ['.md']  # Include only files with the .md extension
+file_filter = ['.md']  # Include only files with the .md extension
 tokens_info = get_num_tokens_from_folder(folder_path, file_filter)
 
 tokens_info_df = pd.DataFrame(tokens_info, columns=['file', 'tokens'])
