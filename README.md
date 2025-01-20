@@ -17,15 +17,17 @@ Select the model to use for tokenization in the Jupyter notebook. You can choose
 
 ### Calculate tokens in a text
 
-Set the `text` variable to your text. Run all cells.
+1. Set the `text` variable to your text.
+1. Run all cells.
 
 ```python
-text = "Your text here"
+text = 'Your text here'
 ```
 
 ### Calculate tokens in a file
 
-Set the `file_path` variable to the path of your file. Run all cells.
+1. Set the `file_path` variable to the path of your file.
+1. Run all cells.
 
 ```python
 file_path = 'path/to/your/file.txt'
@@ -35,7 +37,9 @@ print(f'{file_path}: {num_tokens}')
 
 ### Calculate tokens in files in a folder
 
-Set the `folder_path` variable to the path of your folder. Optionally, specify a filter for which files to include. Run all cells.
+1. Set the `folder_path` variable to the path of your folder.
+1. Optionally, specify a filter for which files to include.
+1. Run all cells.
 
 ```python
 folder_path = 'path/to/your/folder'
